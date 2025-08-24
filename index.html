@@ -2,31 +2,166 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI ヘアカラーレシピ提案</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#8b5cf6">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
 </head>
 <body class="bg-gradient-to-br from-purple-100 to-pink-100 min-h-screen p-4">
     <div class="max-w-6xl mx-auto">
+        <!-- ヘッダー -->
         <div class="text-center mb-8">
             <h1 class="text-4xl md:text-5xl font-bold text-purple-800 mb-4">🎨 AI ヘアカラーレシピ提案</h1>
             <p class="text-lg text-purple-600">フィヨーレ クオルシア & BLカラー対応</p>
         </div>
+
+        <!-- 通知エリア -->
+        <div id="notification" class="hidden"></div>
+
+        <!-- メインカード -->
         <div class="bg-white rounded-2xl shadow-2xl p-6 md:p-8">
-            <h2 class="text-2xl font-bold text-gray-800 mb-6">完全版AIヘアカラーレシピ提案アプリケーション</h2>
-            <p class="text-gray-600 mb-4">AI統合、PWA対応、カラー配合計算機能を完全実装しました！</p>
-            <div class="text-center mb-6">
-                <h3 class="text-lg font-semibold text-gray-800 mb-4">クイックレシピ</h3>
-                <div class="flex gap-4 justify-center mb-6">
-                    <button onclick="loadQuickRecipe(`ash`)" class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg font-medium">アッシュベージュ</button>
-                    <button onclick="loadQuickRecipe(`pink`)" class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg font-medium">ピンクベージュ</button>
-                    <button onclick="loadQuickRecipe(`silver`)" class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg font-medium">シルバーアッシュ</button>
+            <!-- モード選択 -->
+            <div class="flex gap-4 mb-6 justify-center">
+                <button class="mode-btn active" data-mode="recipe">�� 配合レシピモード</button>
+                <button class="mode-btn" data-mode="hex">�� HEX直接指定モード</button>
+            </div>
+
+            <!-- 配合レシピモード -->
+            <div id="recipeMode" class="block">
+                <!-- ブランド選択 -->
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">カラー剤ブランド</h3>
+                    <div id="brand-selector" class="flex gap-4">
+                        <button class="brand-button active" data-brand="qualucia">
+                            <div class="text-center">
+                                <div class="text-2xl mb-1">🎨</div>
+                                <div class="font-semibold">クオルシア</div>
+                                <div class="text-xs text-gray-600">高明度・高彩度</div>
+                            </div>
+                        </button>
+                        <button class="brand-button" data-brand="blcolor">
+                            <div class="text-center">
+                                <div class="text-2xl mb-1">💜</div>
+                                <div class="font-semibold">BLカラー</div>
+                                <div class="text-xs text-gray-600">グレイッシュ・ビビッド</div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 配合ビルダー -->
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="text-lg font-semibold text-gray-800">配合レシピ</h3>
+                        <div class="flex gap-2">
+                            <button onclick="loadQuickRecipe('ash')" class="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded text-sm">アッシュ</button>
+                            <button onclick="loadQuickRecipe('pink')" class="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded text-sm">ピンク</button>
+                            <button onclick="loadQuickRecipe('silver')" class="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded text-sm">シルバー</button>
+                            <button onclick="clearIngredients()" class="px-3 py-1 bg-red-100 hover:bg-red-200 rounded text-sm">クリア</button>
+                        </div>
+                    </div>
+                    <div id="formulaBuilder">
+                        <div class="ingredient-row">
+                            <input type="text" class="code-input" placeholder="薬剤コード (例: 10GR)" maxlength="6">
+                            <input type="number" class="ratio-input" value="60" min="1" max="100">
+                            <div class="color-preview"></div>
+                            <button class="remove-btn" onclick="removeIngredient(this)">×</button>
+                        </div>
+                        <div class="ingredient-row">
+                            <input type="text" class="code-input" placeholder="薬剤コード (例: 9SB)" maxlength="6">
+                            <input type="number" class="ratio-input" value="40" min="1" max="100">
+                            <div class="color-preview"></div>
+                            <button class="remove-btn" onclick="removeIngredient(this)">×</button>
+                        </div>
+                    </div>
+                    <button onclick="addIngredient()" class="mt-3 px-4 py-2 bg-purple-100 hover:bg-purple-200 text-purple-700 rounded-lg font-medium">
+                        + 薬剤を追加
+                    </button>
+                </div>
+
+                <!-- 目標レベル選択 -->
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">目標レベル</h3>
+                    <div class="level-selector">
+                        <button class="level-btn" data-level="6">6</button>
+                        <button class="level-btn" data-level="7">7</button>
+                        <button class="level-btn" data-level="8">8</button>
+                        <button class="level-btn" data-level="9">9</button>
+                        <button class="level-btn active" data-level="10">10</button>
+                        <button class="level-btn" data-level="11">11</button>
+                        <button class="level-btn" data-level="12">12</button>
+                        <button class="level-btn" data-level="13">13</button>
+                    </div>
+                </div>
+
+                <!-- 薬剤量計算 -->
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">薬剤量計算</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">髪の長さ</label>
+                            <select id="hairLength" class="w-full p-3 border-2 border-gray-200 rounded-lg">
+                                <option value="short">ショート</option>
+                                <option value="medium" selected>ミディアム</option>
+                                <option value="long">ロング</option>
+                                <option value="superlong">スーパーロング</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">総量 (g)</label>
+                            <input type="number" id="totalAmount" value="100" class="w-full p-3 border-2 border-gray-200 rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">根元比率 (%)</label>
+                            <input type="number" id="rootRatio" value="60" min="0" max="100" class="w-full p-3 border-2 border-gray-200 rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">毛先比率 (%)</label>
+                            <input type="number" id="endsRatio" value="40" min="0" max="100" class="w-full p-3 border-2 border-gray-200 rounded-lg">
+                        </div>
+                    </div>
+                    <div id="amountResult" class="mt-3 p-3 bg-gray-50 rounded-lg text-center"></div>
+                </div>
+
+                <!-- 生成ボタン -->
+                <div class="text-center">
+                    <button id="generate-button" class="px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900 text-white font-bold text-lg rounded-xl shadow-lg transform hover:scale-105 transition-all duration-200">
+                        🎨 AIレシピ生成
+                    </button>
+                </div>
+
+                <!-- ローダー -->
+                <div id="loader" class="hidden justify-center items-center mt-6">
+                    <div class="loader"></div>
+                    <span class="ml-3 text-purple-600 font-medium">AIがレシピを生成中...</span>
                 </div>
             </div>
+
+            <!-- HEX直接指定モード -->
+            <div id="hexMode" class="hidden">
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">HEX色指定</h3>
+                    <div class="flex items-center gap-4">
+                        <input type="text" id="hexInput" class="flex-1 p-3 border-2 border-gray-200 rounded-lg" placeholder="#B39C86" value="#B39C86">
+                        <div id="colorPreview" class="w-16 h-16 rounded-lg border-2 border-gray-300"></div>
+                    </div>
+                    
+                    <!-- プリセットカラー -->
+                    <div class="mb-4">
+                        <h4 class="text-sm font-medium text-gray-700 mb-2">プリセットカラー</h4>
+                        <div id="presetColors" class="preset-colors"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 結果表示エリア -->
+            <div id="result-output" class="mt-8"></div>
+
             <!-- 最終色表示 -->
             <div class="mt-8">
                 <h2 class="text-xl font-bold text-purple-700 border-b-2 border-purple-200 pb-2 mb-4">最終色</h2>
@@ -40,14 +175,16 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <script src="app.js"></script>
-</body>
-</html>
-            <div class="text-center mt-8 pt-6 border-t-2 border-purple-200">
+
+            <!-- フッター -->
             <div class="text-center mt-8 pt-6 border-t-2 border-purple-200">
                 <p class="text-sm text-gray-600 mb-2">Developed by</p>
                 <p class="text-lg font-bold text-purple-800 mb-1">tsugumi oda</p>
                 <p class="text-sm text-gray-600">olabo</p>
             </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
