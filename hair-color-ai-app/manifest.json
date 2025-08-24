@@ -1,0 +1,18 @@
+{
+  "name": "AI ヘアカラーレシピ提案",
+  "short_name": "ヘアカラーAI",
+  "description": "AIが提案するヘアカラーレシピ",
+  "start_url": "/hair-color-ai-app/",
+  "display": "standalone",
+  "background_color": "#667eea",
+  "theme_color": "#8b5cf6",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 100 100\\"><text y=\\".9em\\" font-size=\\"90\\">🎨</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ]
+}
+  "author": "tsugumi oda",
+  "developer": "olabo",

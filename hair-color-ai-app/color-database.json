@@ -1,0 +1,901 @@
+{
+  "qualucia": {
+    "name": "フィヨーレ クオルシア",
+    "description": "高明度・高彩度。ブリーチ毛やハイトーンカラーに適し、透明感と柔らかさを表現する。",
+    "colors": {
+      
+      "colors": {
+        "Hair Lightner 1-2": {
+          "family": "LIGHTNER",
+          "level": 12,
+          "hex": "#F5F1E8",
+          "rgb": [245, 241, 232],
+          "name": "ヘアライトナー 1-2"
+        
+        "Silver Ash 1-4": {
+          "family": "SILVER_ASH", 
+          "level": 11,
+          "hex": "#D8CDD5",
+          "rgb": [216, 205, 213],
+          "name": "シルバーアッシュ 1-4"
+        
+        "Lavender 1-6": {
+          "family": "LAVENDER",
+          "level": 11,
+          "hex": "#C8B5C8",
+          "rgb": [200, 181, 200],
+          "name": "ラベンダー 1-6"
+        
+        "Beige 1-7": {
+          "family": "BEIGE",
+          "level": 10,
+          "hex": "#C5A895",
+          "rgb": [197, 168, 149],
+          "name": "ベージュ 1-7"
+        
+        "Silver 2-2": {
+          "family": "SILVER",
+          "level": 9,
+          "hex": "#B8B0A8",
+          "rgb": [184, 176, 168],
+          "name": "シルバー 2-2"
+        
+        "Cool Pink 2-4": {
+          "family": "COOL_PINK",
+          "level": 9,
+          "hex": "#A89098",
+          "rgb": [168, 144, 152],
+          "name": "クールピンク 2-4"
+        
+        "Warm Ash 2-7": {
+          "family": "WARM_ASH",
+          "level": 9,
+          "hex": "#958578",
+          "rgb": [149, 133, 120],
+          "name": "ウォームアッシュ 2-7"
+        
+        "Silver 3-2": {
+          "family": "SILVER",
+          "level": 8,
+          "hex": "#A8A098",
+          "rgb": [168, 160, 152],
+          "name": "シルバー 3-2"
+        
+        "Silver Ash 3-4": {
+          "family": "SILVER_ASH",
+          "level": 8,
+          "hex": "#988890",
+          "rgb": [152, 136, 144],
+          "name": "シルバーアッシュ 3-4"
+        
+        "Sand Beige 3-6": {
+          "family": "SAND_BEIGE",
+          "level": 8,
+          "hex": "#A89088",
+          "rgb": [168, 144, 136],
+          "name": "サンドベージュ 3-6"
+        
+        "Pink Beige 3-7": {
+          "family": "PINK_BEIGE",
+          "level": 8,
+          "hex": "#A88880",
+          "rgb": [168, 136, 128],
+          "name": "ピンクベージュ 3-7"
+        
+        "Beige 3-8": {
+          "family": "BEIGE",
+          "level": 8,
+          "hex": "#A08070",
+          "rgb": [160, 128, 112],
+          "name": "ベージュ 3-8"
+        
+        "Silver 4-2": {
+          "family": "SILVER",
+          "level": 7,
+          "hex": "#989088",
+          "rgb": [152, 144, 136],
+          "name": "シルバー 4-2"
+        
+        "Silver Ash 4-4": {
+          "family": "SILVER_ASH",
+          "level": 7,
+          "hex": "#887880",
+          "rgb": [136, 120, 128],
+          "name": "シルバーアッシュ 4-4"
+        
+        "Sand Beige 4-6": {
+          "family": "SAND_BEIGE",
+          "level": 7,
+          "hex": "#988078",
+          "rgb": [152, 128, 120],
+          "name": "サンドベージュ 4-6"
+        
+        "Pink Beige 4-7": {
+          "family": "PINK_BEIGE",
+          "level": 7,
+          "hex": "#987870",
+          "rgb": [152, 120, 112],
+          "name": "ピンクベージュ 4-7"
+        
+        "Beige 4-8": {
+          "family": "BEIGE",
+          "level": 7,
+          "hex": "#906860",
+          "rgb": [144, 104, 96],
+          "name": "ベージュ 4-8"
+        
+        "Hero Violet 5-4": {
+          "family": "HERO_VIOLET",
+          "level": 6,
+          "hex": "#705870",
+          "rgb": [112, 88, 112],
+          "name": "ヒーローバイオレット 5-4"
+        
+        "Garnet Red 5-6": {
+          "family": "GARNET_RED",
+          "level": 6,
+          "hex": "#905850",
+          "rgb": [144, 88, 80],
+          "name": "ガーネットレッド 5-6"
+        
+        "Milk Honey 5-8": {
+          "family": "MILK_HONEY",
+          "level": 6,
+          "hex": "#806050",
+          "rgb": [128, 96, 80],
+          "name": "ミルクハニー 5-8"
+        
+        "Silver 6-2": {
+          "family": "SILVER",
+          "level": 5,
+          "hex": "#787068",
+          "rgb": [120, 112, 104],
+          "name": "シルバー 6-2"
+        
+        "Silver Ash 6-4": {
+          "family": "SILVER_ASH",
+          "level": 5,
+          "hex": "#686060",
+          "rgb": [104, 96, 96],
+          "name": "シルバーアッシュ 6-4"
+        
+        "Sand Beige 6-6": {
+          "family": "SAND_BEIGE",
+          "level": 5,
+          "hex": "#785858",
+          "rgb": [120, 88, 88],
+          "name": "サンドベージュ 6-6"
+        
+        "Pink Beige 6-7": {
+          "family": "PINK_BEIGE",
+          "level": 5,
+          "hex": "#785050",
+          "rgb": [120, 80, 80],
+          "name": "ピンクベージュ 6-7"
+        
+        "Beige 6-8": {
+          "family": "BEIGE",
+          "level": 5,
+          "hex": "#704840",
+          "rgb": [112, 72, 64],
+          "name": "ベージュ 6-8"
+        
+        "Navy Blue 7-4": {
+          "family": "NAVY_BLUE",
+          "level": 4,
+          "hex": "#383050",
+          "rgb": [56, 48, 80],
+          "name": "ネイビーブルー 7-4"
+        
+        "Wine Frost 7-6": {
+          "family": "WINE_FROST",
+          "level": 4,
+          "hex": "#583840",
+          "rgb": [88, 56, 64],
+          "name": "ワインフロスト 7-6"
+        
+        "Brown Bourbon 7-8": {
+          "family": "BROWN_BOURBON",
+          "level": 4,
+          "hex": "#504038",
+          "rgb": [80, 64, 56],
+          "name": "ブラウンバーボン 7-8"
+        
+        "Grey 8-2": {
+          "family": "GREY",
+          "level": 3,
+          "hex": "#585050",
+          "rgb": [88, 80, 80],
+          "name": "グレー 8-2"
+        
+        "Silver Ash 8-4": {
+          "family": "SILVER_ASH",
+          "level": 3,
+          "hex": "#484040",
+          "rgb": [72, 64, 64],
+          "name": "シルバーアッシュ 8-4"
+        
+        "Sand Beige 8-6": {
+          "family": "SAND_BEIGE",
+          "level": 3,
+          "hex": "#584038",
+          "rgb": [88, 64, 56],
+          "name": "サンドベージュ 8-6"
+        
+        "Pink Beige 8-7": {
+          "family": "PINK_BEIGE",
+          "level": 3,
+          "hex": "#583030",
+          "rgb": [88, 48, 48],
+          "name": "ピンクベージュ 8-7"
+        
+        "Beige 8-8": {
+          "family": "BEIGE",
+          "level": 3,
+          "hex": "#502828",
+          "rgb": [80, 40, 40],
+          "name": "ベージュ 8-8"
+        
+        "Ocean Purple 9-4": {
+          "family": "OCEAN_PURPLE",
+          "level": 2,
+          "hex": "#281828",
+          "rgb": [40, 24, 40],
+          "name": "オーシャンパープル 9-4"
+        
+        "Royal Purple 9-6": {
+          "family": "ROYAL_PURPLE",
+          "level": 2,
+          "hex": "#381820",
+          "rgb": [56, 24, 32],
+          "name": "ロイヤルパープル 9-6"
+        
+        "Most Supreme 9-8": {
+          "family": "MOST_SUPREME",
+          "level": 2,
+          "hex": "#301810",
+          "rgb": [48, 24, 16],
+          "name": "モストシュプリーム 9-8"
+      
+      
+      
+        "LIGHTNER": "ライトナー",
+        "SILVER_ASH": "シルバーアッシュ",
+        "LAVENDER": "ラベンダー",
+        "BEIGE": "ベージュ",
+        "SILVER": "シルバー",
+        "COOL_PINK": "クールピンク",
+        "WARM_ASH": "ウォームアッシュ",
+        "SAND_BEIGE": "サンドベージュ",
+        "PINK_BEIGE": "ピンクベージュ",
+        "HERO_VIOLET": "ヒーローバイオレット",
+        "GARNET_RED": "ガーネットレッド",
+        "MILK_HONEY": "ミルクハニー",
+        "NAVY_BLUE": "ネイビーブルー",
+        "WINE_FROST": "ワインフロスト",
+        "BROWN_BOURBON": "ブラウンバーボン",
+        "GREY": "グレー",
+        "OCEAN_PURPLE": "オーシャンパープル",
+        "ROYAL_PURPLE": "ロイヤルパープル",
+        "MOST_SUPREME": "モストシュプリーム"
+
+    },
+  "blcolor": {
+    "name": "BLカラー",
+    "description": "高品質なヘアカラー剤。豊富な色合いと優れた発色力で、プロフェッショナルにも愛用される。",
+    "colors": {
+      
+      "colors": {
+        "12NN": {
+          "family": "NN",
+          "level": 12,
+          "hex": "#E8E0D8",
+          "rgb": [232, 224, 216],
+          "name": "ナチュラル 12レベル"
+        
+        "12MT": {
+          "family": "MT",
+          "level": 12,
+          "hex": "#D8D0C0",
+          "rgb": [216, 208, 192],
+          "name": "マット 12レベル"
+        
+        "12GN": {
+          "family": "GN",
+          "level": 12,
+          "hex": "#D0D8C8",
+          "rgb": [208, 216, 200],
+          "name": "グリーン 12レベル"
+        
+        "12GR": {
+          "family": "GR",
+          "level": 12,
+          "hex": "#D8D0C8",
+          "rgb": [216, 208, 200],
+          "name": "グレー 12レベル"
+        
+        "12GP": {
+          "family": "GP",
+          "level": 12,
+          "hex": "#D8C8C0",
+          "rgb": [216, 200, 192],
+          "name": "グレープ 12レベル"
+        
+        "12GB": {
+          "family": "GB",
+          "level": 12,
+          "hex": "#D0C8B8",
+          "rgb": [208, 200, 184],
+          "name": "ゴールドベージュ 12レベル"
+        
+        "12GNB": {
+          "family": "GNB",
+          "level": 12,
+          "hex": "#D0C8B0",
+          "rgb": [208, 200, 176],
+          "name": "グリーンベージュ 12レベル"
+        
+        "12GY": {
+          "family": "GY",
+          "level": 12,
+          "hex": "#D8D0A8",
+          "rgb": [216, 208, 168],
+          "name": "グレイッシュイエロー 4レベル"
+        
+        "3NN": {
+          "family": "NN",
+          "level": 3,
+          "hex": "#282818",
+          "rgb": [40, 40, 24],
+          "name": "ナチュラル 3レベル"
+        
+        "ACID_CLEAR": {
+          "family": "ACID",
+          "level": 0,
+          "hex": "#FFFFFF",
+          "rgb": [255, 255, 255],
+          "name": "クリア"
+        
+        "ACID_BLACK": {
+          "family": "ACID",
+          "level": 1,
+          "hex": "#101010",
+          "rgb": [16, 16, 16],
+          "name": "ブラック"
+        
+        "ACID_DARK_BROWN": {
+          "family": "ACID",
+          "level": 2,
+          "hex": "#304020",
+          "rgb": [48, 64, 32],
+          "name": "ダークブラウン"
+        
+        "ACID_BROWN": {
+          "family": "ACID",
+          "level": 3,
+          "hex": "#605040",
+          "rgb": [96, 80, 64],
+          "name": "ブラウン"
+        
+        "ACID_LIGHT_BROWN": {
+          "family": "ACID",
+          "level": 4,
+          "hex": "#907060",
+          "rgb": [144, 112, 96],
+          "name": "ライトブラウン"
+        
+        "ACID_YELLOW": {
+          "family": "ACID",
+          "level": 10,
+          "hex": "#F0E060",
+          "rgb": [240, 224, 96],
+          "name": "イエロー"
+        
+        "ACID_ORANGE": {
+          "family": "ACID",
+          "level": 7,
+          "hex": "#D08040",
+          "rgb": [208, 128, 64],
+          "name": "オレンジ"
+        
+        "ACID_RED": {
+          "family": "ACID",
+          "level": 5,
+          "hex": "#802030",
+          "rgb": [128, 32, 48],
+          "name": "レッド"
+        
+        "ACID_VIOLET": {
+          "family": "ACID",
+          "level": 6,
+          "hex": "#604080",
+          "rgb": [96, 64, 128],
+          "name": "バイオレット"
+        
+        "ACID_ASH": {
+          "family": "ACID",
+          "level": 5,
+          "hex": "#606050",
+          "rgb": [96, 96, 80],
+          "name": "アッシュ"
+        
+        "ACID_BLUE": {
+          "family": "ACID",
+          "level": 6,
+          "hex": "#406080",
+          "rgb": [64, 96, 128],
+          "name": "ブルー"
+        
+        "ACID_MATTE": {
+          "family": "ACID",
+          "level": 5,
+          "hex": "#507050",
+          "rgb": [80, 112, 80],
+          "name": "マット"
+      
+      
+      
+        "NN": "ナチュラル",
+        "MT": "マット",
+        "GN": "グリーン",
+        "GR": "グレー",
+        "GP": "グレープ",
+        "GB": "ゴールドベージュ",
+        "GNB": "グリーンベージュ",
+        "GY": "グレイッシュイエロー",
+        "MB": "マットブルー",
+        "BV": "ブルーバイオレット",
+        "V": "バイオレット",
+        "RV": "レッドバイオレット",
+        "R": "レッド",
+        "P": "ピンク",
+        "O": "オレンジ",
+        "C": "シアン",
+        "Y": "イエロー",
+        "G": "グリーン",
+        "BG": "ブルーグリーン",
+        "PB": "ピンクベージュ",
+        "CB": "コッパーベージュ",
+        "ACID": "アシッドタイプ"
+12レベル"
+        
+        "10NN": {
+          "family": "NN",
+          "level": 10,
+          "hex": "#C8C0B8",
+          "rgb": [200, 192, 184],
+          "name": "ナチュラル 10レベル"
+        
+        "10MT": {
+          "family": "MT",
+          "level": 10,
+          "hex": "#B8B0A0",
+          "rgb": [184, 176, 160],
+          "name": "マット 10レベル"
+        
+        "10GN": {
+          "family": "GN",
+          "level": 10,
+          "hex": "#B0B8A8",
+          "rgb": [176, 184, 168],
+          "name": "グリーン 10レベル"
+        
+        "10GR": {
+          "family": "GR",
+          "level": 10,
+          "hex": "#B8B0A8",
+          "rgb": [184, 176, 168],
+          "name": "グレー 10レベル"
+        
+        "10GP": {
+          "family": "GP",
+          "level": 10,
+          "hex": "#B8A8A0",
+          "rgb": [184, 168, 160],
+          "name": "グレープ 10レベル"
+        
+        "10GB": {
+          "family": "GB",
+          "level": 10,
+          "hex": "#B0A898",
+          "rgb": [176, 168, 152],
+          "name": "ゴールドベージュ 10レベル"
+        
+        "10GNB": {
+          "family": "GNB",
+          "level": 10,
+          "hex": "#B0A890",
+          "rgb": [176, 168, 144],
+          "name": "グリーンベージュ 10レベル"
+        
+        "10GY": {
+          "family": "GY",
+          "level": 10,
+          "hex": "#B8B088",
+          "rgb": [184, 176, 136],
+          "name": "グレイッシュイエロー 10レベル"
+        
+        "10MB": {
+          "family": "MB",
+          "level": 10,
+          "hex": "#78A8A8",
+          "rgb": [120, 168, 168],
+          "name": "マットブルー 10レベル"
+        
+        "10BV": {
+          "family": "BV",
+          "level": 10,
+          "hex": "#7090B0",
+          "rgb": [112, 144, 176],
+          "name": "ブルーバイオレット 10レベル"
+        
+        "10V": {
+          "family": "V",
+          "level": 10,
+          "hex": "#708090",
+          "rgb": [112, 128, 144],
+          "name": "バイオレット 10レベル"
+        
+        "10RV": {
+          "family": "RV",
+          "level": 10,
+          "hex": "#B08098",
+          "rgb": [176, 128, 152],
+          "name": "レッドバイオレット 10レベル"
+        
+        "10R": {
+          "family": "R",
+          "level": 10,
+          "hex": "#C08080",
+          "rgb": [192, 128, 128],
+          "name": "レッド 10レベル"
+        
+        "10P": {
+          "family": "P",
+          "level": 10,
+          "hex": "#C09080",
+          "rgb": [192, 144, 128],
+          "name": "ピンク 10レベル"
+        
+        "10O": {
+          "family": "O",
+          "level": 10,
+          "hex": "#D0A070",
+          "rgb": [208, 160, 112],
+          "name": "オレンジ 10レベル"
+        
+        "10C": {
+          "family": "C",
+          "level": 10,
+          "hex": "#D0B060",
+          "rgb": [208, 176, 96],
+          "name": "シアン 10レベル"
+        
+        "10Y": {
+          "family": "Y",
+          "level": 10,
+          "hex": "#E0D050",
+          "rgb": [224, 208, 80],
+          "name": "イエロー 10レベル"
+        
+        "9NN": {
+          "family": "NN",
+          "level": 9,
+          "hex": "#B0A898",
+          "rgb": [176, 168, 152],
+          "name": "ナチュラル 9レベル"
+        
+        "8NN": {
+          "family": "NN",
+          "level": 8,
+          "hex": "#988878",
+          "rgb": [152, 136, 120],
+          "name": "ナチュラル 8レベル"
+        
+        "8MT": {
+          "family": "MT",
+          "level": 8,
+          "hex": "#907860",
+          "rgb": [144, 120, 96],
+          "name": "マット 8レベル"
+        
+        "8GN": {
+          "family": "GN",
+          "level": 8,
+          "hex": "#808868",
+          "rgb": [128, 136, 104],
+          "name": "グリーン 8レベル"
+        
+        "8GR": {
+          "family": "GR",
+          "level": 8,
+          "hex": "#887868",
+          "rgb": [136, 120, 104],
+          "name": "グレー 8レベル"
+        
+        "8GP": {
+          "family": "GP",
+          "level": 8,
+          "hex": "#886860",
+          "rgb": [136, 104, 96],
+          "name": "グレープ 8レベル"
+        
+        "8GB": {
+          "family": "GB",
+          "level": 8,
+          "hex": "#806858",
+          "rgb": [128, 104, 88],
+          "name": "ゴールドベージュ 8レベル"
+        
+        "8GNB": {
+          "family": "GNB",
+          "level": 8,
+          "hex": "#806850",
+          "rgb": [128, 104, 80],
+          "name": "グリーンベージュ 8レベル"
+        
+        "8GY": {
+          "family": "GY",
+          "level": 8,
+          "hex": "#887048",
+          "rgb": [136, 112, 72],
+          "name": "グレイッシュイエロー 8レベル"
+        
+        "8MB": {
+          "family": "MB",
+          "level": 8,
+          "hex": "#587878",
+          "rgb": [88, 120, 120],
+          "name": "マットブルー 8レベル"
+        
+        "8BV": {
+          "family": "BV",
+          "level": 8,
+          "hex": "#506078",
+          "rgb": [80, 96, 120],
+          "name": "ブルーバイオレット 8レベル"
+        
+        "8V": {
+          "family": "V",
+          "level": 8,
+          "hex": "#505060",
+          "rgb": [80, 80, 96],
+          "name": "バイオレット 8レベル"
+        
+        "8RV": {
+          "family": "RV",
+          "level": 8,
+          "hex": "#805060",
+          "rgb": [128, 80, 96],
+          "name": "レッドバイオレット 8レベル"
+        
+        "8PB": {
+          "family": "PB",
+          "level": 8,
+          "hex": "#A06858",
+          "rgb": [160, 104, 88],
+          "name": "ピンクベージュ 8レベル"
+        
+        "8CB": {
+          "family": "CB",
+          "level": 8,
+          "hex": "#C08840",
+          "rgb": [192, 136, 64],
+          "name": "コッパーベージュ 8レベル"
+        
+        "7NN": {
+          "family": "NN",
+          "level": 7,
+          "hex": "#887860",
+          "rgb": [136, 120, 96],
+          "name": "ナチュラル 7レベル"
+        
+        "7MT": {
+          "family": "MT",
+          "level": 7,
+          "hex": "#806848",
+          "rgb": [128, 104, 72],
+          "name": "マット 7レベル"
+        
+        "7GN": {
+          "family": "GN",
+          "level": 7,
+          "hex": "#707850",
+          "rgb": [112, 120, 80],
+          "name": "グリーン 7レベル"
+        
+        "7GR": {
+          "family": "GR",
+          "level": 7,
+          "hex": "#786850",
+          "rgb": [120, 104, 80],
+          "name": "グレー 7レベル"
+        
+        "7GP": {
+          "family": "GP",
+          "level": 7,
+          "hex": "#785848",
+          "rgb": [120, 88, 72],
+          "name": "グレープ 7レベル"
+        
+        "7GB": {
+          "family": "GB",
+          "level": 7,
+          "hex": "#705840",
+          "rgb": [112, 88, 64],
+          "name": "ゴールドベージュ 7レベル"
+        
+        "7GNB": {
+          "family": "GNB",
+          "level": 7,
+          "hex": "#705838",
+          "rgb": [112, 88, 56],
+          "name": "グリーンベージュ 7レベル"
+        
+        "7GY": {
+          "family": "GY",
+          "level": 7,
+          "hex": "#786030",
+          "rgb": [120, 96, 48],
+          "name": "グレイッシュイエロー 7レベル"
+        
+        "7RV": {
+          "family": "RV",
+          "level": 7,
+          "hex": "#803040",
+          "rgb": [128, 48, 64],
+          "name": "レッドバイオレット 7レベル"
+        
+        "7O": {
+          "family": "O",
+          "level": 7,
+          "hex": "#A06030",
+          "rgb": [160, 96, 48],
+          "name": "オレンジ 7レベル"
+        
+        "5NN": {
+          "family": "NN",
+          "level": 5,
+          "hex": "#686048",
+          "rgb": [104, 96, 72],
+          "name": "ナチュラル 5レベル"
+        
+        "5MT": {
+          "family": "MT",
+          "level": 5,
+          "hex": "#605030",
+          "rgb": [96, 80, 48],
+          "name": "マット 5レベル"
+        
+        "5GN": {
+          "family": "GN",
+          "level": 5,
+          "hex": "#506038",
+          "rgb": [80, 96, 56],
+          "name": "グリーン 5レベル"
+        
+        "5GR": {
+          "family": "GR",
+          "level": 5,
+          "hex": "#585038",
+          "rgb": [88, 80, 56],
+          "name": "グレー 5レベル"
+        
+        "5GP": {
+          "family": "GP",
+          "level": 5,
+          "hex": "#584030",
+          "rgb": [88, 64, 48],
+          "name": "グレープ 5レベル"
+        
+        "5GB": {
+          "family": "GB",
+          "level": 5,
+          "hex": "#504028",
+          "rgb": [80, 64, 40],
+          "name": "ゴールドベージュ 5レベル"
+        
+        "5GNB": {
+          "family": "GNB",
+          "level": 5,
+          "hex": "#504020",
+          "rgb": [80, 64, 32],
+          "name": "グリーンベージュ 5レベル"
+        
+        "5GY": {
+          "family": "GY",
+          "level": 5,
+          "hex": "#584818",
+          "rgb": [88, 72, 24],
+          "name": "グレイッシュイエロー 5レベル"
+        
+        "5G": {
+          "family": "G",
+          "level": 5,
+          "hex": "#306030",
+          "rgb": [48, 96, 48],
+          "name": "グリーン 5レベル"
+        
+        "5BG": {
+          "family": "BG",
+          "level": 5,
+          "hex": "#184860",
+          "rgb": [24, 72, 96],
+          "name": "ブルーグリーン 5レベル"
+        
+        "5V": {
+          "family": "V",
+          "level": 5,
+          "hex": "#483060",
+          "rgb": [72, 48, 96],
+          "name": "バイオレット 5レベル"
+        
+        "5RV": {
+          "family": "RV",
+          "level": 5,
+          "hex": "#601848",
+          "rgb": [96, 24, 72],
+          "name": "レッドバイオレット 5レベル"
+        
+        "4NN": {
+          "family": "NN",
+          "level": 4,
+          "hex": "#484830",
+          "rgb": [72, 72, 48],
+          "name": "ナチュラル 4レベル"
+        
+        "4MT": {
+          "family": "MT",
+          "level": 4,
+          "hex": "#403818",
+          "rgb": [64, 56, 24],
+          "name": "マット 4レベル"
+        
+        "4GN": {
+          "family": "GN",
+          "level": 4,
+          "hex": "#304820",
+          "rgb": [48, 72, 32],
+          "name": "グリーン 4レベル"
+        
+        "4GR": {
+          "family": "GR",
+          "level": 4,
+          "hex": "#383820",
+          "rgb": [56, 56, 32],
+          "name": "グレー 4レベル"
+        
+        "4GP": {
+          "family": "GP",
+          "level": 4,
+          "hex": "#382818",
+          "rgb": [56, 40, 24],
+          "name": "グレープ 4レベル"
+        
+        "4GB": {
+          "family": "GB",
+          "level": 4,
+          "hex": "#302810",
+          "rgb": [48, 40, 16],
+          "name": "ゴールドベージュ 4レベル"
+        
+        "4GNB": {
+          "family": "GNB",
+          "level": 4,
+          "hex": "#302808",
+          "rgb": [48, 40, 8],
+          "name": "グリーンベージュ 4レベル"
+        
+        "4GY": {
+          "family": "GY",
+          "level": 4,
+          "hex": "#383000",
+          "rgb": [56, 48, 0],
+    }
+  },
+  "quick_recipes": {
+    "ash": { "name": "アッシュベージュ", "description": "透明感のあるクールトーン", "ingredients": [{"code": "Silver Ash 1-4", "ratio": 60, "brand": "qualucia"}, {"code": "Silver 2-2", "ratio": 40, "brand": "qualucia"}] },
+    "pink": { "name": "ピンクベージュ", "description": "上品なピンクがかったブラウン", "ingredients": [{"code": "Pink Beige 3-7", "ratio": 70, "brand": "qualucia"}, {"code": "Beige 3-8", "ratio": 30, "brand": "qualucia"}] },
+    "silver": { "name": "シルバーアッシュ", "description": "透明感のあるシルバーグレー", "ingredients": [{"code": "Silver 2-2", "ratio": 50, "brand": "qualucia"}, {"code": "Silver Ash 1-4", "ratio": 30, "brand": "qualucia"}, {"code": "Hair Lightner 1-2", "ratio": 20, "brand": "qualucia"}] }
+  }
+}
