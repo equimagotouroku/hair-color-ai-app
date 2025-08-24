@@ -1,18 +1,262 @@
 /* カスタムフォントとベーススタイル */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap");
 
-* { box-sizing: border-box; }
+* { 
+    box-sizing: border-box; 
+}
 
-body { font-family: "Noto Sans JP", "Inter", sans-serif; line-height: 1.6; }
+body { 
+    font-family: "Noto Sans JP", "Inter", sans-serif; 
+    line-height: 1.6; 
+}
 
 /* モード選択ボタン */
-.mode-selector { display: flex; gap: 1rem; margin-bottom: 2rem; justify-content: center; }
-.mode-btn { padding: 0.75rem 1.5rem; border: 2px solid #e5e7eb; border-radius: 0.75rem; background: white; color: #6b7280; font-weight: 600; cursor: pointer; transition: all 0.3s ease; }
-.mode-btn:hover { border-color: #8b5cf6; color: #8b5cf6; }
-.mode-btn.active { background: linear-gradient(135deg, #8b5cf6, #a855f7); color: white; border-color: #8b5cf6; box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3); }
+.mode-selector { 
+    display: flex; 
+    gap: 1rem; 
+    margin-bottom: 2rem; 
+    justify-content: center; 
+}
 
-/* 通知スタイル */
-.notification { position: fixed; top: 2rem; right: 2rem; padding: 1rem 1.5rem; border-radius: 0.5rem; color: white; font-weight: 600; z-index: 1000; transform: translateX(100%); transition: transform 0.3s ease; }
-.notification.show { transform: translateX(0); }
-.notification.success { background: linear-gradient(135deg, #10b981, #059669); }
-.notification.error { background: linear-gradient(135deg, #ef4444, #dc2626); }
+.mode-btn { 
+    padding: 0.75rem 1.5rem; 
+    border: 2px solid #e5e7eb; 
+    border-radius: 0.75rem; 
+    background: white; 
+    color: #6b7280; 
+    font-weight: 600; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+}
+
+.mode-btn:hover { 
+    border-color: #8b5cf6; 
+    color: #8b5cf6; 
+}
+
+.mode-btn.active { 
+    background: linear-gradient(135deg, #8b5cf6, #a855f7); 
+    color: white; 
+    border-color: #8b5cf6; 
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3); 
+}
+
+/* ブランドボタン */
+.brand-button {
+    flex: 1;
+    padding: 1rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 0.75rem;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.brand-button:hover {
+    border-color: #8b5cf6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.2);
+}
+
+.brand-button.active {
+    background: linear-gradient(135deg, #8b5cf6, #a855f7);
+    color: white;
+    border-color: #8b5cf6;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+}
+
+/* レベル選択 */
+.level-selector {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.level-btn {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 0.5rem;
+    background: white;
+    color: #6b7280;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.level-btn:hover {
+    border-color: #8b5cf6;
+    color: #8b5cf6;
+}
+
+.level-btn.active {
+    background: linear-gradient(135deg, #8b5cf6, #a855f7);
+    color: white;
+    border-color: #8b5cf6;
+    box-shadow: 0 2px 8px rgba(139, 92, 246, 0.3);
+}
+
+/* 配合行 */
+.ingredient-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 80px 40px;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: #f7fafc;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.code-input {
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.code-input.valid {
+    border-color: #48bb78;
+    background: #f0fff4;
+}
+
+.code-input.invalid {
+    border-color: #f56565;
+    background: #fff5f5;
+}
+
+.ratio-input {
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.color-preview {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid #e2e8f0;
+    background: #f7fafc;
+}
+
+.remove-btn {
+    background: #f56565;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.remove-btn:hover {
+    background: #e53e3e;
+    transform: scale(1.1);
+}
+
+/* プリセットカラー */
+.preset-colors {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.preset-color {
+    aspect-ratio: 1;
+    border-radius: 8px;
+    border: 2px solid #e2e8f0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: end;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+.preset-color:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* ローダー */
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #9333EA;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 通知 */
+.notification {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: 600;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.notification.show {
+    transform: translateX(0);
+}
+
+.notification.success {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.notification.error {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .ingredient-row {
+        grid-template-columns: 1fr 1fr 60px 40px;
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .code-input,
+    .ratio-input {
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    .color-preview {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .level-selector {
+        gap: 0.25rem;
+    }
+    
+    .level-btn {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 14px;
+    }
+}
